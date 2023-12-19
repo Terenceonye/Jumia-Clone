@@ -1,0 +1,582 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-image: url(../images/Jumia-cover-you-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+
+    background-color: rgb(186, 128, 241);
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+
+.container {
+    width: 85vw;
+    margin: auto;
+}
+
+.top-anime {
+    background-image: url(../images/Jumia-cover-you.gif);
+    height: 55px;
+    background-size: cover;
+    background-position: right;
+
+    
+}
+
+.menu {
+    display: flex;
+    /* justify-content: center; */
+    background-color: rgb(240, 240, 240);
+    right: 0px;
+    left: 0px;
+    height: 32px;
+    
+
+    position: absolute;
+}
+
+.container .sell-on-jumia {
+    position: absolute;
+    line-height: 2;
+    z-index: 2;
+    left: 8vw;
+    color: #F68B1E;
+    font-size: 14px;
+
+    top: 3px;
+    /* line-height: 20px; */
+    
+}
+
+.sell-on-jumia img {
+    width: 13px;
+    top: 8px;
+    position: absolute;
+}
+
+
+.sell-on-jumia a {
+    color: #F68B1E;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 18px;
+
+    /* letter-spacing: 0.5px; */
+}
+
+
+
+.menu ul {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    column-gap: 13px;
+    align-items: center;
+    position: relative;
+    left: 160px;
+}
+
+.menu ul li img {
+    padding-top: 7px;
+    width: 56px;
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+.menu ul li i, .menu ul li a  {
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    
+}
+
+.menu ul li a {
+    font-weight: 400;
+}
+
+
+.menu ul li:hover a  {
+    color: rgb(30, 144, 238);
+}
+
+.menu ul li:hover i  {
+    color: rgb(30, 144, 238);
+}
+
+
+/* MENU 2 CSS DESIGN STARTS HERE*/
+
+.menu2 {
+    position: sticky !important;
+    top: 2px;
+    background-color: white;
+    margin-top: 32px;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    padding: 0 4vw 0 8vw;
+
+
+    display: flex;
+    justify-content: space-around;
+
+    z-index: 1000;
+    
+}
+
+.menu2 img {
+    width: 130px;
+}
+
+.menu2 .right {
+    flex: 1;
+    display: flex;
+    /* background-color: lightblue; */
+    column-gap: 10px;
+    padding-left: 6vw;
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+
+.input-container {
+    width: 57%;
+    position: relative;
+}
+
+.right .input-container input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #696969;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 10px 0 40px;
+    
+    
+}
+
+.right .search-icon {
+    position: absolute;
+    z-index: 1;
+    left: 12px;
+    top: 12px;
+    font-size: 18px;
+    color: #616161;
+    
+}
+
+.right button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #F68B1E;
+    background-color: #F68B1E;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 2px 2px 10px rgb(114, 114, 114);
+    
+}
+
+.right button:hover {
+    background-color: #d4710d;
+    border: 1px solid #d4710d;
+}
+
+
+
+
+.right .ext a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    color: #2b2b2b;
+    padding-left: 0px;
+}
+
+.right .ext i {
+    color: #2b2b2b;
+    /* font-weight: 500; */
+    font-size: 20px;
+    padding-left: 7px;
+
+}
+
+.right .ext:hover a {
+    color: #F68B1E;
+}
+
+.right .ext:hover i {
+    color: #F68B1E;
+}
+
+
+
+
+
+/* CATEGORY SECTION CSS SATRTS HERE */
+
+.cat-section {
+    display: flex;
+    width: 85vw;
+    margin: 17px auto;
+    column-gap: 15px;
+}
+
+.cat {
+    width: 210px;
+    background-color: white;
+    height: 57.7vh;
+    border-radius: 5px;
+}
+
+.cat ul li {
+    list-style-type: none;
+    padding: 7px 10px 0px 10px;
+    line-height: 1.5;
+}
+
+.cat ul li a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #2b2b2b;
+   
+}
+
+.cat ul li i {
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.cat ul li:hover a {
+    color: #F68B1E;
+   
+}
+
+.cat ul li:hover i {
+    color: #F68B1E;
+}
+
+
+
+.middle {
+    flex: 1;
+    /* background-color: lightpink; */
+    height: 57.7vh;
+    border-radius: 5px;
+    background-image: url(../images/Desktop_Homepage_Slider__712x384.png);
+
+}
+
+
+.right-advert {
+    width: 210px;
+    
+    height: 57.7vh;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.right-advert .top-advert {
+    flex: 1;
+    /* background-color: lightblue; */
+    border-radius: 5px;
+    background-image: url(../images/bsb.png);
+
+}
+
+.right-advert .down-advert {
+    flex: 1;
+    /* background-color: lightblue; */
+    border-radius: 5px;
+    background-image: url(../images/JForce.png);
+
+}
+
+
+/* FIRST PRODUCTS SECTION */
+
+.products1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    column-gap: 12px;
+    row-gap: 12px;
+    width: 85vw;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+    position: relative;
+}
+
+
+/* CSS FOR SCROLL TO TOP BUTTON */
+
+#to-top {
+    position: sticky;
+    top: 87vh;
+    margin-left: 94.5vw;
+    padding: 13px 16px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid #F68B1E;
+    transition: background-color 0.2s;
+
+}
+
+a #to-top i {
+    color: #2b2b2b;
+}
+
+
+#to-top:hover {
+    background-color: #f3dfc4;
+}
+
+
+/* CSS FOR TOP BUTTONS ENDS HERE */
+
+
+.products1 .item1 {
+    height: 170px;
+    background-color: white;
+    border-radius: 5px;
+    transition: transform 0.1s;
+    
+
+}
+
+.item1 img {
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.item1 p {
+    font-size: 14px;
+    text-align: center;
+    color: #2b2b2b;
+ 
+}
+
+.item1 p:nth-child(3) {
+    font-size: 14px;
+    text-align: left;
+    padding: 3px 10px;
+    font-size: 17px;
+ 
+}
+
+.item1 p:nth-child(4) {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    color: #616161;
+    text-decoration: line-through;
+ 
+}
+
+.item1 p:nth-child(5) {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+ 
+}
+
+
+/* CSS STYLING FOR THE QUANTITY BAR STARTS HERE*/
+
+.item1 p:nth-child(6) {
+    height: 8px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    padding-left: 10px;
+    position: relative;
+    background-color: #F68B1E;
+ 
+}
+
+.meter {
+    background-color: #b6b6b6;
+    height: 8px;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    margin: auto;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.m1 {
+    width:10%;
+}
+
+.m2 {
+    width:40%;
+}
+
+.m3 {
+    width:70%;
+}
+
+.m4 {
+    width:90%;
+}
+
+/* CSS STYLING FOR THE QUANTITY BAR ENDS HERE*/
+
+.item1:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 4px 15px rgb(170, 170, 170, 0.2);
+    cursor: pointer;
+}
+
+
+/* TOP SELLING PRODUCTS CSS DESIGN STARTS HERE */
+
+.top-selling-h {
+    width: 85vw;
+    margin: auto;
+    background-color: white;
+    padding: 20px 20px 15px 20px;
+    margin-top: 15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 20px;
+    color: #2b2b2b;
+}
+.top-selling {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    column-gap: 12px;
+    row-gap: 12px;
+    width: 85vw;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.top-selling .items {
+    cursor: pointer;
+}
+
+
+
+/* FLASH SALES CSS STARTS HERE */
+
+
+.flash-sales-h {
+    width: 85vw;
+    margin: auto;
+    background-color: rgb(224, 8, 8);
+    padding: 12px 20px 12px 20px;
+    margin-top: 15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 20px;
+    color: #2b2b2b;
+    color: #ffffff;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.flash-sales-h p:nth-child(3) {
+    font-size: 16px;
+}
+
+
+
+
+.flash-sales{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    column-gap: 12px;
+    row-gap: 12px;
+    width: 85vw;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.flash-sales .items {
+    cursor: pointer;
+}
+
+
+.limited-deals-h {
+    width: 85vw;
+    margin: auto;
+    background-color: rgb(240, 208, 167);
+    padding: 12px 20px 12px 20px;
+    margin-top: 15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 22px;
+    color: #2b2b2b;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+
+
+/* FOOTER CSS STARTS HERE */
+
+.footer {
+    height: 70px;
+    width: 100vw;
+    background-color: #818181;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    margin-top: 20px;
+}
+
+/* .products1 .item1:nth-of-type(even) {
+    background-color: lightblue;
+} */
+
+
