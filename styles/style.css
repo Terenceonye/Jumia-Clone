@@ -86,7 +86,8 @@ body {
     column-gap: 13px;
     align-items: center;
     position: relative;
-    left: 160px;
+    left: 60px;
+    margin-bottom: 0;
 }
 
 .menu ul li img {
@@ -154,6 +155,17 @@ body {
     /* justify-content: space-between; */
 
 }
+
+.menu2 .hamburg {
+    color: black;
+}
+
+.menu2 .hamburg:hover {
+    color: orange;
+    cursor: pointer
+}
+
+
 
 .input-container {
     width: 57%;
@@ -250,7 +262,7 @@ body {
 .cat ul li {
     list-style-type: none;
     padding: 7px 10px 0px 10px;
-    line-height: 1.5;
+    line-height: 1.55;
 }
 
 .cat ul li a {
@@ -263,6 +275,7 @@ body {
 .cat ul li i {
     font-size: 14px;
     padding-right: 10px;
+    color: black;
 }
 
 .cat ul li:hover a {
@@ -275,13 +288,29 @@ body {
 }
 
 
+/* show or hide cat section in other pages */
+
+.show-cat {
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+
+.menu2 .hamburghov:hover > .show-cat {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    box-shadow: 4px 4px 15px rgb(170, 170, 170, 0.9);
+}
+
 
 .middle {
     flex: 1;
     /* background-color: lightpink; */
     height: 57.7vh;
     border-radius: 5px;
-    background-image: url(../images/Desktop_Homepage_Slider__712x384.png);
+    background-image: url(../images/Slider.png);
 
 }
 
@@ -300,9 +329,15 @@ body {
 .right-advert .top-advert {
     flex: 1;
     /* background-color: lightblue; */
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background-image: url(../images/bsb.png);
+    
+    /* line-height: 0.9; */
 
+}
+
+.call-number {
+    font-size: 14px;
 }
 
 .right-advert .down-advert {
@@ -503,7 +538,7 @@ a #to-top i {
     width: 85vw;
     margin: auto;
     background-color: rgb(224, 8, 8);
-    padding: 12px 20px 12px 20px;
+    padding: 12px 20px 1px 20px;
     margin-top: 15px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -547,7 +582,7 @@ a #to-top i {
     width: 85vw;
     margin: auto;
     background-color: rgb(240, 208, 167);
-    padding: 12px 20px 12px 20px;
+    padding: 12px 20px 1px 20px;
     margin-top: 15px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -565,7 +600,7 @@ a #to-top i {
 
 /* FOOTER CSS STARTS HERE */
 
-.footer {
+/* .footer {
     height: 70px;
     width: 100vw;
     background-color: #818181;
@@ -573,10 +608,135 @@ a #to-top i {
     line-height: 70px;
     color: white;
     margin-top: 20px;
-}
+} */
 
 /* .products1 .item1:nth-of-type(even) {
     background-color: lightblue;
 } */
+
+
+
+/* Jumia Footer css starts here */
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nxt-footer{
+    background-color: #565658;
+}
+.fap{
+    font-size: 13px;
+}
+
+.paddyman{
+    font-size: 11px;
+}
+
+.coderX{
+    width: 82%;
+}
+
+.coderP{
+    width: 60%;
+    margin-left: 35px;
+}
+
+hr{
+    width: 88%;
+}
+
+.botlink{
+    padding: 12px 20px;
+    border: 1px solid white;
+    color: white;
+}
+
+.botlink:hover{
+    border: 1px solid rgb(247, 109, 18);
+    color: rgb(247, 109, 18);
+}
+
+.botlink2{
+    padding-top: 0;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 10px;
+    border: 1px solid white;
+}
+
+.botlink2:hover{
+    border: 1px solid rgb(247, 109, 18);
+}
+
+.sublink{
+    font-size: 8px;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.sublink:hover{
+    color: rgb(247, 109, 18);
+}
+
+
+
+.sublink2{
+    margin: 0;
+    padding-bottom: 2px;
+    font-size: 14px;
+    color: white;
+}
+
+.sublink2:hover{
+    color: rgb(247, 109, 18);
+}
+
+.main-form{
+    position: relative;
+}
+
+.font-1{
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+
+.font-2{
+    position: absolute;
+    top: 18px;
+    left: 8px;
+}
+
+.footer-logo{
+    margin-left: -15px;
+}
+
+input[type=email]:focus {
+    border: solid rgb(247, 109, 18);
+    outline: none;
+  }
+
+.mailer:hover{
+    color: rgb(247, 109, 18);
+}
+
+.a-special{
+    text-decoration: none;
+}
+
+.a-special:hover{
+    text-decoration: underline;
+}
+
+.text-p:hover{
+    color: rgb(247, 109, 18);
+}
+
+/* Jumia Footer css ends here */
 
 
